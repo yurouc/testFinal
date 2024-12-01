@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amber"
+    tools:context="MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="-242dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="五帳俱全"
+            android:textColor="@color/grey"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/button_date_picker"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="64dp"
+            android:backgroundTint="@color/pink"
+            android:text="選擇日期"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        <Button
+            android:id="@+id/button_start_accounting"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:text="開始記帳"
+            android:textSize="26sp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_date_picker"
+            android:clickable="true"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/button_account_content"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:text="記帳內容"
+            android:textSize="26sp"
+            android:backgroundTint="@color/brown"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_start_accounting" />
+
+        <Button
+            android:id="@+id/button_financial_analysis"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:text="財務分析"
+            android:textSize="26sp"
+            android:backgroundTint="@color/teal"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_account_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/item_background">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期 : "
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:paddingBottom="8dp"/>
+
+
+    <TextView
+        android:id="@+id/clas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="類別 : "
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金額 : " android:textSize="18sp"
+        android:textColor="#000000"
+        android:paddingBottom="8dp"/>
+</LinearLayout>

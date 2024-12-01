@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Money</string>
+    <string name="btn_income">收入</string>
+    <string name="btn_expense">支出</string>
+    <string name="btn_save">儲存</string>
+    <string name="income_desc">切換到收入類別</string>
+    <string name="expense_desc">切換到支出類別</string>
+    <string name="save_desc">儲存這筆記錄</string>
+    <string name="money_hint">請輸入金額</string>
+    <string name="date_hint">選擇日期</string>
+    <string name="category_hint">選擇類別</string>
+    <string name="back">回首頁</string>
+    <string name="deleted">清除所有</string>
+</resources>

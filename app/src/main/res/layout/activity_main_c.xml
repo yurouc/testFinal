@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCEF"
+    tools:context="MainActivity_c">
+
+
+
+    <Button
+        android:id="@+id/btnIn"
+        android:layout_width="102dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#7eacb5"
+        android:contentDescription="@string/income_desc"
+        android:text="@string/btn_income"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOut"
+        android:layout_width="102dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="152dp"
+        android:backgroundTint="#958ebc"
+        android:contentDescription="@string/expense_desc"
+        android:text="@string/btn_expense"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textMoney"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+        android:layout_width="218dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="120dp"
+        android:background="#E6C7C7"
+        android:hint="@string/money_hint"
+        android:inputType="numberDecimal"
+        android:textColor="#0D0D0C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOut" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="106dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#7893d8"
+        android:contentDescription="@string/save_desc"
+        android:text="@string/btn_save"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textMoney" />
+
+    <!-- 儲存按鈕 -->
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:hint="@string/date_hint"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="372dp"
+        android:backgroundTint="#afad44"
+        android:text="@string/back"
+        android:textColorLink="#afad44"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOut" />
+
+    <Button
+        android:id="@+id/deleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="372dp"
+        android:backgroundTint="#f29f02"
+        android:text="@string/deleted"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnIn" />
+
+    <AutoCompleteTextView
+        android:id="@+id/Choose"
+        android:layout_width="229dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="140dp"
+        android:hint="@string/category_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
